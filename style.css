@@ -1,0 +1,750 @@
+:root{
+    --bg-color: #eeeeee;
+    --text: #4e4e4e;
+    --text-titles: #6b6b6b;
+    --hover-text: #2d2d2d;
+    --orange: #ff7b00ce;
+    --black: #000;
+    --white: #fff;
+    --blue: #007bc7;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-color);
+    margin: 0 80px;
+}
+
+/*************BARRA DE NAVEGACION**************/
+.barra-navegacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+nav img, nav a{
+    margin: 0 20px;
+}
+
+nav img{
+    width: 15px;
+}
+
+nav a{
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+nav a:hover{
+    color: var(--hover-text);
+}
+
+/************SECTION HERO*************/
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding: 90px 0;
+}
+
+.hero h1{
+    font-size: 2.7em;
+    flex-basis: 75%;
+    color: var(--text-titles);
+}
+
+span{
+    color: var(--black);
+}
+
+.questions{
+    display: grid;
+    grid-auto-flow: row;
+    gap: 30px;
+    font-size: .8em;
+}
+
+.questions a{
+    color: var(--blue);
+}
+
+.need-help, .found-apple{
+    display: flex;
+}
+
+.questions img{
+    margin-right: 10px;
+    width: 35px;
+}
+
+
+.p-bold{
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+/***********FILA DE ARTICULOS**************/
+
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: center;
+}
+
+.art img{
+    width: 120px;
+    height: auto;
+}
+
+.art a{
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.art a:hover{
+    color: var(--hover-text);
+    text-decoration: underline;
+}
+
+/*********NEWS SECTION************/
+.news{
+padding: 90px 0;
+}
+
+h2{
+    color: var(--text-titles);
+    font-size: 1.6em;
+}
+
+.cards-news{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.card{
+    height: 475px;
+    width: 360px;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.5);
+}
+
+.card:hover{
+    transform:scale(1.03);
+}
+
+.content-card{
+    margin: 20px;
+}
+
+.content-card p{
+    margin: 10px;
+    font-weight: 500;
+}
+
+.content-card p:first-child{
+    font-size: 13px;
+}
+
+.content-card p:nth-child(2){
+    font-size: 1.8em;
+}
+
+.content-card p:nth-child(3){
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+.iphone15pro-new{
+    background-image: url(imagenes/iphone15-new.jpg);
+    color: var(--white) ;
+    background-size: cover;
+    background-position: center;
+}
+
+.macbook-new{
+    background-image: url(imagenes/macbook-new.jpg);
+    color: var(--black);
+    background-size: cover;
+    background-position: center;
+}
+
+.applewatch-new{
+    background-image: url(imagenes/applewatch-new.jpg);
+    color: var(--white);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/******************ABOUT MAC******************/
+.about-mac{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.about{
+    width: 360px;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.3);
+}
+
+.about:hover{
+    transform:scale(1.03);
+    cursor: pointer;
+}
+
+.about-content{
+    margin: 20px;
+}
+
+.about-content p{
+    margin: 10px;
+    font-weight: 500;
+}
+
+.about-content p:first-child{
+    color: var(--blue);
+    font-size: 13px;
+}
+
+.about-content p:nth-child(2){
+    font-size: 1.6em;
+}
+
+.about-content p:nth-child(3){
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+/**********IPHONE CARD************/
+.card-iphone{
+    padding: 90px 0;
+}
+
+.about-iphone{
+    padding-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.aboutIphone{
+    height: 450px;
+    width: 330px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.1);
+}
+
+.aboutIphone:hover{
+    transform:scale(1.03);
+    border: 0.5px solid var(--orange) ;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.3);
+}
+
+.content-iphone{
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-iphone p{
+    margin: 5px;
+    font-weight: 500;
+}
+
+.firstContent p:first-child{
+    color: var(--orange);
+    font-size: 13px;
+}
+
+.firstContent p:nth-child(2){
+    font-size: 1.6em;
+}
+
+.secondContent p{
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.secondContent button{
+    padding: 7px 10px;
+    font-size: 0.8em;
+    font-weight: 500;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.iphone15pro-about{
+    background-image: url(https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-7inch-bluetitanium_AV1_GEO_EMEA?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1692845694831);
+    background-position: center;
+    background-size: cover;
+}
+
+.iphone15-about{
+    background-image: url(https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-finish-select-202309-6-1inch-green_AV1_GEO_EMEA?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=cHJOTXEwTU92OEtKVDV2cVB1R2FTSjlERndlRTljaUdZeHJGM3dlLzR2OGlVZHlzbnhhZ1YvbmdZQUl5dHZUaWhTQXNnZWpCZytycUV5NDgydWxCSFNSTUMybCtXNXZpclhWeFpYZUcvRk5uNDBzcjA0aG5jQUJ1UTI2VzJJR1lRUXhaajFSVk1nRUJZREVnU1RRbGpBPT0=&traceId=1);
+    background-position: center;
+    background-size: cover;
+}
+
+.iphone14-about{
+    background-image: url(https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-14-finish-select-202209-6-7inch-product-red_AV1_GEO_US?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=bjlYUjk1NXN2Uy9CTWFMaXBneUF0bEthL1VsNXgveGUwQ1JqNzA0ZHArbWxXL3pKcXRQSld2d0VIS3Z6V2EyYVlIVWlicmJNcHlmdGtpSFEwS3pEQ05JVUY1eklwSElSL2pyWFgySnpoc1Jzb1V2QVBtaDVvQ0NNMkt6OURFWUpObUxFblhacEJpQmZSellZL3Y3ZGR4UVUwQnZueThMNXZRa25XTlNvMU9FPQ==&traceId=1);
+    background-position: center;
+    background-size: cover;
+}
+
+/************FORMULARIO*************/
+.formulario{
+    display: flex;
+    border: 0.5px solid var(--text-titles);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 600px;
+    border-radius: 20px;
+    flex-basis: 100%;
+    padding: 20px;
+}
+
+.gallery{
+    padding-top: 20px;
+}
+
+.form h2{
+    color: var(--black);
+}
+
+.form input, .form textarea{
+    font-size: 0.8em;
+}
+
+.inputs-container{
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+    padding-top: 30px;
+}
+
+.inputs-container input{
+    height: 40px;
+    width: 60%;
+    background-color: var(--bg-color);
+    border: none;
+    outline: none;
+    border-bottom: 0.5px solid var(--blue);
+    border-radius: 5px;
+}
+
+.inputs-container textarea{
+    width: 60%;
+    height: 60px;
+    padding: 5px 3px;
+    resize: none;
+    border: 0.5px solid var(--blue);
+    border-radius: 5px;
+    outline: none;
+    background-color: var(--bg-color);
+}
+
+.inputs-container button{
+    padding: 8px 10px;
+    width: 120px;
+    font-size: 0.8em;
+    font-weight: 500;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.gallery{
+    columns: 3;
+    overflow: hidden;
+    width: 100%;
+}
+
+.gallery div img{
+    width: 100%;
+}
+
+/*FOOTER*/
+footer{
+    padding: 20px 0;
+}
+
+footer p{
+    color: var(--hover-text);
+    text-align: center;
+    font-size: 13px
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 1270px){
+    body{
+        margin: 0 80px;
+    }
+    .hero h1{
+        font-size: 2.2em;
+    }
+
+    .questions{
+        font-size: 0.7em;
+    }
+    
+    .questions img{
+        width: 40px;
+    }
+
+    .articles img{
+        width: 100px ;
+    }
+
+    .card{
+        width: 320px;
+    }
+
+    .about{
+        width: 320px;
+    }
+
+    .about-content{
+        margin: 20px;
+    }
+
+    .about-content p:first-child{
+        font-size: 0.8em;
+    }
+
+    .about-content p:nth-child(2){
+        font-size: 1.3em;
+    }
+
+    .aboutIphone{
+        width: 320px;
+    }
+
+    .firstContent p:nth-child(2){
+        font-size: 1.4em;
+    }
+
+    .gallery{
+        width: 80%;
+    }
+}
+/*
+@media (min-width:1221px) and (max-width:1546px){
+    body{
+        margin: 0px 70px;
+    }
+
+    .questions{
+        margin-top: 10px;
+    }
+
+    .articles img{
+        width: 130px;
+    }
+
+    .cards-news, .about-mac, .about-iphone{
+        justify-content: center;
+    }
+
+    .card, .about, .aboutIphone{
+        width: 350px ;
+        margin: 0 5px;
+    }
+
+    .gallery{
+        width: 90%;
+    }
+
+    
+}*/
+
+@media (max-width: 992px){
+
+    body{
+        margin: 0 20px;
+    }
+
+    .hero, .news, .card-iphone{
+        padding: 50px 0;
+    }
+
+    .hero h1{
+        font-size: 2.5em;
+    }
+
+    .questions{
+        font-size: 0.8em;
+        margin-left: -50px;
+    }
+
+    .articles{
+        justify-content: center;
+    }
+
+    .card{
+        height: 500px;
+        width: 300px;
+    }
+
+    .about{
+        width: 300px;
+    }
+
+    .aboutIphone{
+        height: 500px;
+        width: 300px;
+    }
+
+    .form h2{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 768px){
+
+    body{
+        margin: 0 10px;
+    }
+    .menu{
+        display: none;
+    }
+
+    .barra-navegacion{
+        justify-content: space-between;
+    }
+
+    nav img{
+        margin: 0 5px;
+        width: 15px;
+    }
+
+    .hero h1{
+        font-size: 2.2em;
+    }
+
+    .questions{
+        font-size: 0.7em;
+    }
+
+    .articles img{
+        width: 80px ;
+    }
+
+    .articles p{
+        font-size: 0.8em;
+    }
+
+    .card{
+        height: 350px;
+        width: 230px;
+    }
+
+    .content-card{
+        margin: 15px 8px;
+    }
+
+    .content-card p:first-child{
+        font-size: 0.8em;
+    }
+
+    .content-card p:nth-child(2){
+        font-size: 1.4em;
+    }
+    
+    .content-card p:nth-child(3){
+        font-size: 0.8em;
+    }
+
+    .about{
+        width: 230px;
+    }
+
+    .about-content{
+        margin: 15px;
+    }
+
+    
+    .about-content p:nth-child(2){
+        font-size: 1.2em;
+    }
+    
+    .about-content p:nth-child(3){
+        font-size: 0.8em;
+    }
+
+    .about-iphone{
+        justify-content: center;
+    }
+
+    .aboutIphone{
+        width: 400px;
+        margin: 10px 0;
+    }
+
+}
+
+@media (max-width: 576px){
+
+    body{
+        margin: 0 10px;
+    }
+
+    h2{
+        font-size: 1.6em;
+    }
+
+    .questions{
+        display: none;
+    }
+
+    .hero{
+        padding: 30px 0;
+    }
+
+    .hero h1{
+        font-size: 1.8em;
+    }
+
+    .art{
+        margin: 0px 10px;
+    }
+
+    .cards-news, .about-mac{
+        justify-content: center;
+    }
+
+    .card, .about{
+        margin-top: 10px;
+        width: 450px ;
+    }
+    
+    .aboutIphone{
+        height: 420px;
+    }
+
+    .secondContent button{
+        padding: 5px 6px;
+        font-size: 0.8em;
+    }
+
+    .gallery{
+        display: none;
+    }
+
+    .inputs-container input, .inputs-container textarea{
+        width: 90%;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 762px){
+    h2{
+        font-size: 1.8em;
+    }
+    .questions{
+        gap: 10px;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .questions img{
+        width: 30px;
+    }
+
+    .cards-news, .about-mac{
+        justify-content: center;
+    }
+
+    .card, .about{
+        margin-top: 10px;
+        width: 450px ;
+    }
+
+    .gallery{
+        display: none;
+    }
+}
+
+
+@media (min-width:769px) and (max-width:1054px){
+    body{
+        margin: 0 50px;
+    }
+
+    .barra-navegacion{
+    justify-content: space-between;
+    }
+    .icons-menu img{
+        margin: 0px 5px;
+    }
+    .menu{
+        display: none;
+    }
+
+    .questions{
+        margin-left: 0;
+    }
+
+    .cards-news, .about-mac, .about-iphone{
+        justify-content: center;
+    }
+
+    .card, .about, .aboutIphone{
+        width: 290px;
+        margin: 0 5px;
+    }
+
+    .inputs-container input, .inputs-container textarea{
+        width: 80%;
+    }
+}
+
+@media (min-width:1055px) and (max-width:1150px){
+    .menu{
+        display: block;
+    }
+
+    .about-iphone, .about-mac, .cards-news{
+        justify-content: center;
+    }
+
+    .card, .about, .aboutIphone{
+        width: 300px;
+        margin: 0 5px;
+
+    }
+}
